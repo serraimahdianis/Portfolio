@@ -5,34 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Serrai Mahdi Anis | Web Developer Portfolio</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-    body { background-color: #0f172a; color: #f1f5f9; line-height: 1.6; }
-    header { text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #2563eb, #1e40af); }
-    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    header p { font-size: 1.2rem; color: #cbd5e1; }
-    section { max-width: 1000px; margin: 60px auto; padding: 0 20px; }
-    h2 { font-size: 1.8rem; margin-bottom: 20px; color: #38bdf8; border-bottom: 2px solid #38bdf8; display: inline-block; padding-bottom: 5px; }
-    .about p { margin-top: 10px; color: #e2e8f0; }
-    .skills ul { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
-    .skills li { background: #1e293b; padding: 10px 15px; border-radius: 5px; }
-    .projects .project { background: #1e293b; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
-    .projects h3 { color: #60a5fa; margin-bottom: 10px; }
-    .contact a { color: #38bdf8; text-decoration: none; }
-    footer { text-align: center; padding: 30px; background: #1e293b; color: #94a3b8; }
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0f172a; color: #f1f5f9; line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5rem; margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem; color: #cbd5e1;
+    }
+
+    .profile-photo {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-photo img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile-photo img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #38bdf8;
+    }
+
+    section {
+      max-width: 1000px; margin: 60px auto; padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #38bdf8;
+      border-bottom: 2px solid #38bdf8;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .about p {
+      margin-top: 10px; color: #e2e8f0;
+    }
+
+    .skills ul {
+      list-style: none; display: flex; flex-wrap: wrap; gap: 10px;
+    }
+
+    .skills li {
+      background: #1e293b; padding: 10px 15px; border-radius: 5px;
+    }
+
+    .projects .project {
+      background: #1e293b; padding: 20px; border-radius: 8px; margin-bottom: 20px;
+    }
+
+    .projects h3 {
+      color: #60a5fa; margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #38bdf8; text-decoration: none;
+    }
+
+    footer {
+      text-align: center; padding: 30px; background: #1e293b; color: #94a3b8;
+    }
+
+    /* ✅ Responsive */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .profile-photo img { width: 120px; height: 120px; }
+      section { margin: 40px auto; }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Serrai Mahdi Anis</h1>
     <p>Web Developer | Master 2 IDTW</p>
+
+    <div class="profile-photo">
+      <img src="photo_2025.jpg" alt="Serrai Mahdi Anis">
+    </div>
   </header>
 
   <section class="about">
     <h2>About Me</h2>
     <p>
-      I’m a passionate web developer with a strong interest in modern web technologies.
-      I specialize in building fast, scalable, and user-friendly web applications.
-      Currently pursuing a Master 2 in IDTW, I’m focused on growing my expertise in full-stack development and automation.
+I’m Serrai Mahdi Anis, a passionate Web Developer and Media Buyer pursuing a Master 2 in IDTW.
+I build fast, scalable web apps using Astro, Cloudflare Workers, and JavaScript, and specialize in SEO, Google Discover, and digital automation.
     </p>
   </section>
 
@@ -40,9 +120,10 @@
     <h2>Skills</h2>
     <ul>
       <li>HTML / CSS / JavaScript</li>
-      <li>React / Astro</li>
-      <li>Node.js / Express</li>
-      <li>Cloudflare Workers</li>
+      <li>Astro & Cloudflare Workers</li>
+      <li>Media Buyer</li>
+      <li>Wordpress & Shopify </li>
+      <li>N8N Low Code </li>
       <li>Git / GitHub</li>
       <li>SEO & Google Discover Optimization</li>
     </ul>
@@ -69,21 +150,3 @@
       <h3>Astro Blog Template</h3>
       <p>
         A fast and lightweight blog system using Astro, fully optimized for performance and SEO.
-      </p>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>
-      Email: <a href="mailto:serraimahdianis@gmail.com">serraimahdianis@gmail.com</a><br />
-      GitHub: <a href="https://github.com/serraimahdianis" target="_blank">github.com/serraimahdianis</a><br />
-      Location: Sétif, Algeria
-    </p>
-  </section>
-
-  <footer>
-    © 2025 Serrai Mahdi Anis — All Rights Reserved.
-  </footer>
-</body>
-</html>
