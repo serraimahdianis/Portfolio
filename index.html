@@ -276,20 +276,29 @@
         }
 
         .cv-section {
-            margin: 50px 0;
+            margin: 50px auto;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .cv-buttons {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 20px;
             flex-wrap: wrap;
             margin-top: 30px;
+            width: 100%;
         }
 
         .cv-btn {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 10px;
             background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
             color: #fff;
@@ -300,6 +309,7 @@
             border: 2px solid #38bdf8;
             transition: all 0.4s ease;
             font-size: 1rem;
+            min-width: 160px;
         }
 
         .cv-btn:hover {
@@ -591,6 +601,11 @@
             .cv-buttons {
                 flex-direction: column;
                 align-items: center;
+                gap: 15px;
+            }
+
+            .cv-btn {
+                width: 200px;
             }
 
             .social-links {
@@ -608,22 +623,22 @@
 <body>
     <header>
         <h1>Serrai Mahdi Anis</h1>
-        <p>Web Developer | Master 2 IDTW</p>
+        <p>Dev No Coding Automation AI Agent | Digital Marketing Full Systems</p>
         <div class="profile-photo">
             <img src="photo_2025.jpg" alt="Serrai Mahdi Anis">
         </div>
         
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/serraimahdianis/" target="_blank" title="LinkedIn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </a>
-            <a href="https://twitter.com/your-profile" target="_blank" title="Twitter">
+            <a href="https://x.com/serraimahdianis" target="_blank" title="Twitter/X">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
             </a>
-            <a href="https://www.facebook.com/your-profile" target="_blank" title="Facebook">
+            <a href="https://facebook.com/serraimahdianis" target="_blank" title="Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
             </a>
-            <a href="https://github.com/your-profile" target="_blank" title="GitHub">
+            <a href="https://github.com/serraimahdianis" target="_blank" title="GitHub">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             </a>
         </div>
@@ -631,7 +646,7 @@
 
     <section class="about">
         <h2>About Me</h2>
-        <p>I'm Serrai Mahdi Anis, a passionate Web Developer and Media Buyer pursuing a Master 2 in IDTW. I build fast, scalable web apps using Astro, Cloudflare Workers, and JavaScript, and specialize in SEO, Google Discover, and digital automation.</p>
+        <p>I'm Serrai Mahdi Anis, a passionate Dev No Coding Automation AI Agent and Digital Marketing specialist. I build fast, scalable web apps using Astro, Cloudflare Workers, and JavaScript, while specializing in SEO, Google Discover, and digital automation systems.</p>
     </section>
 
     <section class="skills">
@@ -721,6 +736,18 @@
     <section class="projects">
         <h2>Projects</h2>
         <div class="project">
+            <h3>Bio Setifis Full Digital Marketing</h3>
+            <p>Managed & ran comprehensive ads campaigns on Facebook, Instagram Ads & TikTok Ads. Provided analytics results and growth strategies to optimize performance and ROI.</p>
+        </div>
+        <div class="project">
+            <h3>Jasmine Bijoux</h3>
+            <p>Executed targeted advertising campaigns on TikTok & Meta Ads platforms. Developed strategic marketing content to enhance brand visibility and engagement.</p>
+        </div>
+        <div class="project">
+            <h3>Manissa Gift</h3>
+            <p>Managed social media accounts across multiple platforms. Handled comprehensive social media advertising campaigns to drive brand awareness and sales growth.</p>
+        </div>
+        <div class="project">
             <h3>Google Discover Automation</h3>
             <p>A Cloudflare Workers-based system that automatically generates, optimizes, and publishes trending articles using AI.</p>
         </div>
@@ -756,10 +783,21 @@
         <h2>Contact Me</h2>
         <div class="contact-info">
             <p>📧 Email: <a href="mailto:serraimahdianis@gmail.com">serraimahdianis@gmail.com</a></p>
+            <p>📱 Phone: <a href="tel:+213675358892">+213 675 358 892</a></p>
+            <p>📍 Location: Setif, Algeria</p>
             <p>💬 Let's chat on WhatsApp:</p>
             <a href="https://wa.me/213663466364" target="_blank" class="whatsapp-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.216 175.552">
                     <path d="M89.184 25.227c-33.733 0-61.166 27.423-61.178 61.13a60.98 60.98 0 0 0 9.349 32.535l1.455 2.312-6.179 22.558 23.146-6.069 2.235 1.324c9.387 5.571 20.15 8.518 31.126 8.524h.023c33.707 0 61.14-27.426 61.153-61.135a60.75 60.75 0 0 0-17.895-43.251 60.75 60.75 0 0 0-43.235-17.928z" fill="#25D366"/>
-                    <path d="M68.772 55.603c-1.378-3.061-2.828-3.123-4.137-3.176l-3.524-.043c-1.226 0-3.218.46-4.902 2.3s-6.435 6.287-6.435 15.332 6.588 17.785 7.506 19.013 12.718 20.381 31.405 27.75c15.529 6.124 18.689 4.906 22.061 4.6s10.877-4.447 12.408-8.74 1.532-7.971 1.073-8.74-1.685-1.226-3.525-2.146-10.877-5.367-12.562-5.981-2.91-.919-4.137.921-4.746 5.979-5.819 7.206-2.144 1.381-3.984.462-7.76-2.861-14.784-9.124c-5.465-4.873-9.154-10.891-10.228-12.73s-.114-2.835.808-3.751c.825-.824 1.838-2.147 2.759-3.22s1.224-1.84 1.836-3.065.307-2.301-.153-3.22-4.032-10.011-5.666-13.647" fill="#FFF"/>
+                    <path d="M68.772 55.603c-1.378-3.061-2.828-3.123-4.137-3.176l-3.524-.043c-1.226 0-3.218.46-4.902 2.3s-6.435 6.287-6.435 15.332 6.588 17.785 7.506 19.013s12.718 20.381 31.405 27.75c15.529 6.124 18.689 4.906 22.061 4.6s10.877-4.447 12.408-8.74s1.532-7.971 1.073-8.74-1.685-1.226-3.525-2.146-10.877-5.367-12.562-5.981-2.91-.919-4.137.921-4.746 5.979-5.819 7.206-2.144 1.381-3.984.462-7.76-2.861-14.784-9.124c-5.465-4.873-9.154-10.891-10.228-12.73s-.114-2.835.808-3.751c.825-.824 1.838-2.147 2.759-3.22s1.224-1.84 1.836-3.065.307-2.301-.153-3.22-4.032-10.011-5.666-13.647" fill="#FFF"/>
                 </svg>
                 Send Message WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Serrai Mahdi Anis. All rights reserved.</p>
+    </footer>
+</body>
+</html>
